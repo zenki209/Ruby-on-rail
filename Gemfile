@@ -56,6 +56,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
-group :production do
-  gem 'pg', '1.2.3'
-end
+gem 'sqlite3', group: [:development, :test]
+gem 'pg', group: :production
